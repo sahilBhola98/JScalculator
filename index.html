@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JS Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="calculator">
+      <div id="header" class="text-center">
+        <h1>JS Calculator</h1>
+      </div>
+      <div class="display">
+        0
+      </div>
+      <div class="keypad">
+        <div class="row no-gutters">
+          <button type="button" id="clear" class="btn col-9 text-center">C</button>
+          <button type="button" id="divide" class="btn col-3 text-center">÷</button>
+        </div>
+        <div class="row no-gutters">
+          <button type="button" id="seven" class="btn col-3 text-center">7</button>
+          <button type="button" id="eight" class="btn col-3 text-center">8</button>
+          <button type="button" id="nine" class="btn col-3 text-center">9</button>
+          <button type="button" id="multiply" class="btn col-3 text-center">x</button>
+        </div>
+        <div class="row no-gutters">
+          <button type="button" id="four" class="btn col-3 text-center">4</button>
+          <button type="button" id="five" class="btn col-3 text-center">5</button>
+          <button type="button" id="six" class="btn col-3 text-center">6</button>
+          <button type="button" id="minus" class="btn col-3 text-center">-</button>
+        </div>
+        <div class="row no-gutters">
+          <button type="button" id="one" class="btn col-3 text-center">1</button>
+          <button type="button" id="two" class="btn col-3 text-center">2</button>
+          <button type="button" id="three" class="btn col-3 text-center">3</button>
+          <button type="button" id="add" class="btn col-3 text-center">+</button>
+        </div>
+        <div class="row no-gutters">
+          <button type="button" id="decimal" class="btn col-3 text-center">.</button>
+          <button type="button" id="zero" class="btn col-3 text-center">0</button>
+          <button type="button" id="delete" class="btn col-3 text-center">DEL</button>
+          <button type="button" id="equal" class="btn col-3 text-center">=</button>
+        </div>
+      </div>
+      <div class="footer text-center">
+        Developed by Sahil Bhola
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

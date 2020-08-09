@@ -1,0 +1,74 @@
+
+body {
+  background-color: #e8dcd0;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.container-fluid {
+  /* padding: 10%  ; */
+  height: 100%;
+  position: relative;
+  top: 5rem;
+}
+
+.calculator {
+  height: 100%;
+  width : 50%;
+  background-color: #99dccb;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: -webkit-linear-gradient(#a9e8d8, #74beac);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#a9e8d8, #74beac);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#a9e8d8, #74beac);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#99dccb, #61af9d);
+  /* Standard syntax */
+}
+
+#header {
+  height: 11%;
+  padding: 0 10px;
+  color : white;
+  font-size: 9vh;
+}
+
+.display {
+  height: 18%;
+  opacity: 0.85;
+  font-size: 13vh;
+  text-align: right;
+  padding: 0 5%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.keypad {
+  height: 61%;
+
+}
+
+.footer {
+  height: 10%
+}
+
+.row {
+  margin: 0;
+  height: 20%;
+}
+
+.btn {
+  font-size: 7vh;
+  color : white;
+}
+
+.col-sm-3 {
+  width: 23%;
+  margin: 2px;
+}

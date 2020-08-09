@@ -1,0 +1,94 @@
+var evalString = "";
+var currentNum = "";
+var dispFlag = false;
+$("#clear").click(function(){     //calling clear function
+  $(".display").text("0");
+  currentNum="";
+})
+$("#one").click(function(){
+  currentNum+="1";
+  $(".display").text(currentNum);
+})
+$("#two").click(function(){
+  currentNum+="2";
+  $(".display").text(currentNum);
+})
+$("#three").click(function(){
+  currentNum+="3";
+  $(".display").text(currentNum);
+})
+$("#four").click(function(){
+  currentNum+="4";
+  $(".display").text(currentNum);
+})
+$("#five").click(function(){
+  currentNum+="5";
+  $(".display").text(currentNum);
+})
+$("#six").click(function(){
+  currentNum+="6";
+  $(".display").text(currentNum);
+})
+$("#seven").click(function(){
+  currentNum+="7";
+  $(".display").text(currentNum);
+})
+$("#eight").click(function(){
+  currentNum+="8";
+  $(".display").text(currentNum);
+})
+$("#nine").click(function(){
+  currentNum+="9";
+  $(".display").text(currentNum);
+})
+$("#zero").click(function(){
+  currentNum+="0";
+  $(".display").text(currentNum);
+})
+$("#decimal").click(function(){
+  currentNum+=".";
+  $(".display").text(currentNum);
+})
+$("#add").click(function(){
+  evalString+=currentNum;
+  evalString+="+";
+  currentNum="";
+
+})
+$("#multiply").click(function(){
+  evalString+=currentNum;
+  evalString+="*";
+  currentNum="";
+})
+$("#divide").click(function(){
+  evalString+=currentNum;
+  evalString+="/";
+  currentNum="";
+})
+$("#minus").click(function(){
+  evalString+=currentNum;
+  evalString+="-";
+  currentNum="";
+})
+$("#equal").click(function(){
+  evalString+=currentNum;
+  var ans = eval(evalString);
+
+  $(".display").text(ans);
+  currentNum="";
+  evalString="";
+})
+$("#delete").click(function(){
+  if(currentNum.length===0){
+    $(".display").text(0);
+    return;
+  }
+  else if(currentNum.length===1){
+    currentNum="";
+    $(".display").text(0);
+    return;
+  }else{
+    currentNum=currentNum.slice(0,currentNum.length-1);
+  }
+  $(".display").text(currentNum);
+})
